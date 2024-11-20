@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Button Project</title>
+  </head>
+  <body>
+    <header>COOL BUTTON AND SLIDERS</header>
+    <div class="container">
+      <img src="https://placecats.com/neo/300/200" alt="placekittenIMG" />
+      <p class="instruction">
+        This project is inside a small container, you can click to add to the
+        counter or hold down the button to speed up the counter.
+      </p>
+      <h2 id="h22">Select your color: <span id="colorOutput"></span></h2>
+      <label for="rangeRed">red:</label>
+      <input
+        type="range"
+        id="rangeRed"
+        value="0"
+        min="0"
+        max="255"
+        onchange="onChangeRed()"
+      />
+      <label for="rangeGreen">green:</label>
+      <input
+        type="range"
+        id="rangeGreen"
+        value="139"
+        min="0"
+        max="255"
+        onchange="onChangeGreen()"
+      />
+      <br />
+      <label for="rangeBlue">blue:</label>
+      <input
+        type="range"
+        id="rangeBlue"
+        value="168"
+        min="0"
+        max="255"
+        onchange="onChangeBlue()"
+      />
+      <br />
+      <button class="largeRedButton" onclick="btnPressed()">Button</button>
+      <p>Clicks: <a id="clicks">0</a></p>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
